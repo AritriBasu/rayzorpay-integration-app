@@ -1,5 +1,6 @@
 **{
     box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /****home styles******/
 section .home{
@@ -9,10 +10,22 @@ section .home{
     background-size: cover;
 }
 section .home .home-text{
-    margin-left:10%;
-    padding-top: 40%;
+    margin-left:8%;
+    padding-top: 41%;
+}
+.home-donate a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 500;
 }
 .home-donate{
+    background-color: #f03e44;
+    height: 4em;
+    width: 10em;
+    border-radius: 8px;
+}
+.home-donate:hover{
     background-color: #ee6e73;
 }
 /****home styles end******/
@@ -28,7 +41,11 @@ section .about-us{
     width: 50%;
     padding: 10px;
 }
-  
+.about-text{
+    padding-top: 17%;
+    font-size:26px;
+    font-style: italic;
+}
   /* Clear floats after the columns */
 .about-row:after {
     content: "";
@@ -49,17 +66,38 @@ section .about-us{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.highlight-color{
+    color: #ee6e73;
+}
 /****about us styles end******/
 
-/****donate styles end******/
+/****donate styles******/
 section .donate-section{
     height: 100vh;
-    background-color: #eba2a5;
+    background-color: #f5d2d3;
 }
 .donate-main {
-    margin-left:40%;
+    text-align: center;
+    padding-top: 20%;
 }
-
+.donate-text{
+    font-size: 28px;
+    font-style:italic;
+}
+.donate-button{
+    background-color: bisque;
+    color: #ee6e73;
+    font-size: 24px;
+    font-weight: 600;
+    height: 3em;
+    width: 10em;
+    border: 1px solid black;
+    border-radius: 12px;
+}
+.donate-button:hover{
+    background-color: rgba(248, 222, 191, 0.795);
+}
 /****donate styles end******/
 
 /****contact styles******/
@@ -72,7 +110,8 @@ section .contact-us{
 .contact-column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding-top: 10px;
+    padding-left: 10%;
 }
   
   /* Clear floats after the columns */
@@ -94,6 +133,29 @@ section .contact-us{
     background-image: url(/images/covid-relief.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#contact-us-head{
+    margin-top: 8%;
+    color: #ee6e73;
+}
+#contact-form{
+ width:70%;
+}
+#contact-intro{
+    font-style: italic;
+}
+#contact-us-submit{
+    width: 100%;
+    background-color: #f03e44;
+    height: 2em;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+}
+.form-label{
+    color: #ee6e73;
 }
 /****contact styles end******/
 

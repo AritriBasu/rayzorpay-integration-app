@@ -4,22 +4,22 @@
 <div class="navbar-fixed">
 <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Covid Care</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">Covid Care</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="badges.html">About us</a></li>
-        <li><a href="collapsible.html">Donate</a></li>
-        <li><a href="mobile.html">Contact us</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#donate-section">Donate</a></li>
+        <li><a href="#contact-us">Contact us</a></li>
       </ul>
     </div>
   </nav>
 </div>
   <ul class="sidenav" id="mobile-demo">
-    <li><a href="#">Home</a></li>
-        <li><a href="badges.html">About us</a></li>
-        <li><a href="collapsible.html">Donate</a></li>
-        <li><a href="mobile.html">Contact us</a></li>
+     <li><a href="#">Home</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#donate-section">Donate</a></li>
+        <li><a href="#contact-us">Contact us</a></li>
   </ul>
           
 <!--nav ends-->
@@ -28,7 +28,7 @@
 <section>
   <div class="home">
     <div class="home-text">
-      <button class="home-donate">GET STARTED</button>
+      <button class="home-donate"><a href="#donate-section">GET STARTED</a></button>
     </div>
   </div>
 </section>
@@ -36,11 +36,11 @@
 
 <!--about us section-->
 <section>
-  <div class="about-us">
+  <div class="about-us" id="about-us">
     <div class="about-row">
       <div class="about-column about-text" >
-           Narayan Seva Sansthan (NSS) has taken a pledge to help the families struck by the pandemic by offering food and medical services in this time of distress.
-         People from all across the country are coming forward to help and we are not far behind.
+        <span class="highlight-color">Covid Care</span> has taken a pledge to help the families struck by the pandemic by offering <span class="highlight-color">food</span> and <span class="highlight-color">medical services</span> in this time of distress.
+        <span class="highlight-color">Every donation</span> to this fund will help stop the virus's spread and support <span class="highlight-color">countless families</span>. A single rupee can go a long way in <span class="highlight-color">saving a life</span>.
       </div>
       <div class="about-column">
          <div class="about-column-right">
@@ -54,14 +54,15 @@
 
 <!--donate section-->
 <section>
-  <div class="donate-section">
+  <div class="donate-section" id="donate-section">
     <div class="donate-main">
-      Narayan Seva Sansthan (NSS) has
-      
+      <div class="donate-text">
+      Donate a <span class="highlight-color">rupee</span>. Make someone's life <span class="highlight-color">worth living</span>.
+      </div>
+      <br>
         <button class="donate-button" id="razorpay-donate-btn">
           DONATE NOW
        </button>
-    
     </div>
   </div>
 </section>
@@ -69,21 +70,29 @@
 
 <!--contact section-->
 <section>
-  <div class="contact-us">
+  <div class="contact-us" id="contact-us">
     <div class="contact-row">
       <div class="contact-column contact-column-left" >
         
       </div>
       <div class="contact-column">
-         <div class="contact-column-text">
-           Narayan Seva Sansthan (NSS) has taken a pledge to help the families struck by the pandemic by offering food and medical services in this time of distress.
-         People from all across the country are coming forward to help and we are not far behind.
-         </div>
+         <h2 id="contact-us-head">CONTACT US</h2>
+         <p id="contact-intro">Want to join our initiative? Have any queries?
+           <br> Feel free to  <span class="highlight-color">reach out</span> to us...</p>
+        <form action="/contact-form" method="post" id="contact-form">
+        <label for="fname" class="form-label">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname" class="form-label">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="subject" class="form-label">Subject</label>
+        <textarea id="subject" name="Query" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="SUBMIT"id="contact-us-submit">
+      </form>
       </div>
     </div>
   </div>
 </section>
 <!--contact sections ends-->
 <footer>
-  Made with love by Aritri Basu copy 2021
+  Made with 💖 by Aritri Basu &copy;2021
 </footer>
