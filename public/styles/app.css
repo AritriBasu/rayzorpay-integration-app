@@ -1,0 +1,105 @@
+**{
+    box-sizing: border-box;
+}
+/****home styles******/
+section .home{
+    height: 100vh;
+    background-image:url(/images/every-bit-matters.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section .home .home-text{
+    margin-left:10%;
+    padding-top: 40%;
+}
+.home-donate{
+    background-color: #ee6e73;
+}
+/****home styles end******/
+
+/****about us styles******/
+section .about-us{
+    height: 100vh;
+    background-color: bisque;
+}
+/* Create two equal columns that floats next to each other */
+.about-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+  
+  /* Clear floats after the columns */
+.about-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .about-column {
+      width: 100%;
+    }
+}
+
+.about-column-right{
+    height: 98vh;
+    background-image: url(/images/covid-relief.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/****about us styles end******/
+
+/****donate styles end******/
+section .donate-section{
+    height: 100vh;
+    background-color: #eba2a5;
+}
+.donate-main {
+    margin-left:40%;
+}
+
+/****donate styles end******/
+
+/****contact styles******/
+section .contact-us{
+    height: 95vh;
+    background-color: bisque;
+}
+
+/* Create two equal columns that floats next to each other */
+.contact-column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+  
+  /* Clear floats after the columns */
+.contact-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .contact-column {
+      width: 100%;
+    }
+}
+
+.contact-column-left{
+    height: 95vh;
+    background-image: url(/images/covid-relief.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/****contact styles end******/
+
+/*****footer styles****/
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
