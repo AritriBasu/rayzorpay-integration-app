@@ -29,7 +29,7 @@ app.get('/',function(req,res){
 
 app.post('/donate', async (req, res) => {
   let options = {
-      amount: 500*100,
+      amount: 1*100,
       currency: 'INR',
       //receipt: shortid.generate(), //any unique id
       //payment_capture = 1 //optional
@@ -51,10 +51,10 @@ app.post('/payment-process',(req,res)=>{
   razorpay.payments.fetch(req.body.razorpay_payment_id).then((paymentDetails)=>{
     console.log(paymentDetails);
     if(paymentDetails.status=='authorized' || paymentDetails.status=='captured'){
-    res.send("hello!");
+      res.render('success',{layout:'success-template'});
    }
     else{
-      res.send('oh no!');
+      res.render('error',{layout:'error-template'});
     }
   });
 });

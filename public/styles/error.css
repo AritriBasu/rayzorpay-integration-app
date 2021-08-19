@@ -1,0 +1,9 @@
+**{
+    box-sizing: border-box;
+}
+.error{
+    height: 100vh;
+}
+#error-gif{
+    margin-left: 25%;
+}

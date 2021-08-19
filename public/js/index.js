@@ -14,11 +14,11 @@ axios.post('/donate').then((info)=>{
         callback_url: "http://localhost:8080/payment-process",
         redirect:'true',
 
-        /**"prefill": {
-            "name": "Gaurav Kumar",
-            "email": "gaurav.kumar@example.com",
-            "contact": "9999999999"
-        },
+        prefill: {
+            name: "Aritri Basu",
+            email: "basu.ari@example.com",
+            contact: "9999999999"
+        },/** 
         "notes": {
             "address": "Razorpay Corporate Office"
         },*/
