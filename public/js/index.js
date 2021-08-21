@@ -11,7 +11,7 @@ axios.post('/donate').then((info)=>{
         "description": "Test Transaction",
         //"image": "https://example.com/your_logo",
         order_id: info.data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        callback_url: "http://localhost:3000/payment-process",
+        callback_url: "https://razorpay-integration-app.herokuapp.com/payment-process",
         redirect:'true',
 
         /*prefill: {
