@@ -7,6 +7,11 @@ body{
 .success{
     height: 100vh;
 }
+.success-msg{
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
 #success-gif{
     margin-left: 25%;
 }

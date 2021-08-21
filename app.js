@@ -31,8 +31,6 @@ app.post('/donate', async (req, res) => {
   let options = {
       amount: 1*100,
       currency: 'INR',
-      //receipt: shortid.generate(), //any unique id
-      //payment_capture = 1 //optional
   }
   try {
       const response = await razorpay.orders.create(options)
@@ -59,4 +57,4 @@ app.post('/payment-process',(req,res)=>{
   });
 });
 
-app.listen(8080, () => console.log(`Server Started on ${process.env.PORT}`));
+app.listen(3000, () => console.log(`Server Started on ${process.env.PORT}`));

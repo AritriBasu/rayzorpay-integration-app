@@ -4,17 +4,17 @@ axios.post('/donate').then((info)=>{
     console.log(info);
 
     var options = {
-        key: "rzp_test_ADlY9gCqL0nKJr", // Enter the Key ID generated from the Dashboard
+        key: "rzp_test_hPVajQ5EObBlSz", // Enter the Key ID generated from the Dashboard
         amount: "100", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
         currency: "INR",
         name: "Covid Care",
         "description": "Test Transaction",
         //"image": "https://example.com/your_logo",
         order_id: info.data.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-        callback_url: "http://localhost:8080/payment-process",
+        callback_url: "http://localhost:3000/payment-process",
         redirect:'true',
 
-        prefill: {
+        /*prefill: {
             name: "Aritri Basu",
             email: "basu.ari@example.com",
             contact: "9999999999"
