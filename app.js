@@ -57,4 +57,5 @@ app.post('/payment-process',(req,res)=>{
   });
 });
 
-app.listen(3000, () => console.log(`Server Started on ${process.env.PORT}`));
+const PORT=process.env.PORT|80;
+app.listen(PORT, () => console.log(`Server Started on ${process.env.PORT}`));
